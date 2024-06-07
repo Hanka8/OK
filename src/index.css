@@ -143,7 +143,6 @@ section {
     left: 0;
     width: 100%;
     top: 50%;
-    transform: translateY(-50%);
     font-size: 60px;
     margin-top: 0;
   }
