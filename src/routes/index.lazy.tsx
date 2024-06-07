@@ -9,22 +9,21 @@ function Index() {
   return (
     <main>
       <section id="header" className="header">
-        <nav className="flex-center">
+        <nav className="header__nav">
           <picture className="header__picture">
             <img className="header__img" src="assets/logo.svg" alt="logo" />
           </picture>
-          <ul className="header__ul flex-center">
-            <li>
-              <a href="#projects">projects</a>
-            </li>
-            <li>
-              <a href="#about">about</a>
-            </li>
-          </ul>
+          <a className="header__a" href="#projects">
+            projects
+          </a>
+          <a className="header__a" href="#about">
+            about
+          </a>
         </nav>
         <h1 className="header__h1">Olga Kšírová</h1>
       </section>
       <section id="projects" className="projects">
+        <h1>Sekce 2</h1>
         <Link to="/project" className="text-blue-500">
           Go to Project
         </Link>
@@ -32,7 +31,9 @@ function Index() {
           Go to Logos
         </Link>
       </section>
-      <section id="about" className="about"></section>
+      <section id="about" className="about">
+        <h1>Sekce 3</h1>
+      </section>
     </main>
   );
 }

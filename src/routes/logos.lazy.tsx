@@ -1,4 +1,5 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
+import "../logos.css"
 
 export const Route = createLazyFileRoute("/logos")({
   component: Logos,
@@ -6,7 +7,7 @@ export const Route = createLazyFileRoute("/logos")({
 
 function Logos() {
   return (
-    <main className="p-2">
+    <main className="logos">
       <Link to="/" className="text-blue-500">
         Go Home
       </Link>
