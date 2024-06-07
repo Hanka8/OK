@@ -1,14 +1,33 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 import "../index.css";
+import { useEffect, useState } from "react";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
 });
 
 function Index() {
+  const [screenRatio, setScreenRatio] = useState(
+    window.screen.width / window.screen.height
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenRatio(window.screen.width / window.screen.height);
+    };
+    window.addEventListener("resize", handleResize);
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <main>
-      <section id="header" className="header">
+    <main className={`main ${screenRatio < 2 / 3 ? "mobile-screen" : ""}`}>
+      <section
+        id="header"
+        className={`header ${screenRatio < 2 / 3 ? "mobile-screen" : ""}`}
+      >
         <nav className="header__nav">
           <picture className="header__picture">
             <img className="header__img" src="assets/logo.svg" alt="logo" />
