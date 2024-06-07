@@ -1,3 +1,5 @@
+/* dát sekcím samostatně padding */
+
 :root {
   --background-color: #051226;
   --text--color: #ffffff;
@@ -66,14 +68,18 @@ a:hover {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Header */
+.header {
+  position: relative;
+}
+
 .header.mobile-screen {
   background-image: url("../assets/background.svg");
-  background-size: contain;
-  background-position: center bottom;
+  background-size: 65vh;
+  background-position: -50px bottom;
   background-repeat: no-repeat;
   padding: 32px;
 }
@@ -128,6 +134,19 @@ section {
   font-family: "Whisper", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (max-width: 460px) {
+  .header__h1 {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    margin-top: 0;
+  }
 }
 
 /* smazat */
