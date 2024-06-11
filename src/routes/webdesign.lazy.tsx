@@ -1,10 +1,10 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 
-export const Route = createLazyFileRoute("/project")({
-  component: Project,
+export const Route = createLazyFileRoute("/webdesign")({
+  component: Webdesign,
 });
 
-function Project() {
+function Webdesign() {
   return (
     <main className="project">
       <Link to="/" className="text-blue-500">
