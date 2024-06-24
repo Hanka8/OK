@@ -1,5 +1,5 @@
-import { createLazyFileRoute, Link } from "@tanstack/react-router";
-import { IoCaretBackSharp } from "react-icons/io5";
+import { createLazyFileRoute } from "@tanstack/react-router";
+import Nav from "../components/Nav";
 import "../logos.css";
 import data from "../data.json";
 
@@ -10,10 +10,7 @@ export const Route = createLazyFileRoute("/logos")({
 function Logos() {
   return (
     <main className="logos">
-        <Link to="/" className="nav">
-          <img src="assets/logo.svg" alt="logo" className="nav__logo"/>
-          <IoCaretBackSharp color="white" size="30px" className="nav__back" />
-        </Link>
+      <Nav />
       <h1 className="h1">Logos</h1>
       <div className="logos__content">
         {data.logos.map((logo, index) => (

@@ -1,4 +1,6 @@
-import { createLazyFileRoute, Link } from "@tanstack/react-router";
+import { createLazyFileRoute } from "@tanstack/react-router";
+import Nav from "../components/Nav";
+import "../webdesign.css";
 
 export const Route = createLazyFileRoute("/webdesign")({
   component: Webdesign,
@@ -7,11 +9,8 @@ export const Route = createLazyFileRoute("/webdesign")({
 function Webdesign() {
   return (
     <main className="project">
-      <Link to="/" className="text-blue-500">
-        Go Home
-      </Link>
-      <h1>Hello from project</h1>
-      <p>Project content goes here...</p>
+      <Nav />
+      <h1 className="h1">Web Design</h1>
     </main>
   );
 }
