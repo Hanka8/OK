@@ -1,6 +1,7 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 import "../index.css";
 import { useEffect, useState } from "react";
+import data from "../data.json";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
@@ -15,6 +16,7 @@ function Index() {
 
   useEffect(() => {
     const handleResize = () => {
+      // different background on different screen ratio
       setMobileScreen(
         window.screen.width / window.screen.height < 2 / 3 &&
           window.screen.orientation.angle === 0
@@ -62,34 +64,11 @@ function Index() {
       <section id="about" className="about">
         <div className="about__col col-1">
           <h2 className="about__h2">About me</h2>
-          <p className="about__p">
-            As an aspiring graphic designer, I am driven by a deep passion for
-            creating visually compelling content.
-          </p>
-          <p className="about__p">
-            Graphic design has been a natural extension of my passion for
-            drawing and abstract painting. Though my experience with grahphic
-            design spans just several months, I have dedicated countless hours
-            to improving my skills in design tools in Adobe Creative Suite and
-            Figma, and leveraging AI to enhance my visuals and drawing an
-            inspiration from it. The illustration of colorful waves emanating
-            from a head on my website portfolio is a piece I crafted myself.
-          </p>
-          <p className="about__p">
-            At the moment, I’m designing a meditation website, I’m taking part
-            in a logo design contest as well as reading design literature to
-            improve my designing skills.
-          </p>
-          <p className="about__p">
-            Through design, I also embark on a journey of self-discovery,
-            gaining insights into my own artistic voice and identity.
-          </p>
-          <p className="about__p">
-            My dedication to learning and hands-on projects demonstrates my
-            commitment to excellence in the field of graphic design. I am
-            excited to continue growing and exploring new avenues within this
-            dynamic and fulfilling field.
-          </p>
+          {data.about.map((p, i) => (
+            <p key={i} className="about__p">
+              {p.text}
+            </p>  
+          ))}
         </div>
         <picture className="about__col col-2">
           <img className="about__img" src="assets/olga.jpg" alt="Olga Kšírová" />

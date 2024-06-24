@@ -1,6 +1,94 @@
 .logos {
-    background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3N0NmYwdzRkM2o1YTh5bGRpN3JsdHp0eGQzcGd3bzB0OHY3YnNjZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IRo1EZPNnhbBV6/giphy.webp");
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    font-family: 'Tw Cen MT', sans-serif;
+    padding: 32px 70px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .logos {
+        padding: 16px;
+    }
+}
+
+.h1 {
+    font-size: 90px;
+    color: #fff;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 900px) {
+    .h1 {
+        margin-top: 2rem;
+        font-size: 60px;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+.nav__logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 25px;
+}
+
+.nav:hover .nav__back {
+    scale: 1.5;
+    transition: 200ms ease-in-out; 
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        left: 16px;
+        top: 4rem;
+    }
+    
+    .nav__logo {
+        display: none;
+    }
+}
+
+.logos__col {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 150px;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 900px) {
+    .logos__col {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+.logos__p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media  screen and (max-width: 900px) {
+    .logos__img {
+        max-width: 300px;
+    }
+    
 }

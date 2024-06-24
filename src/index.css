@@ -74,6 +74,12 @@ a {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 900px){
+  .link:hover {
+    text-decoration: none;
+  }
+}
+
 section {
   min-height: 100dvh;
 }
@@ -198,12 +204,20 @@ section {
 
 .about {
   background: var(--background-color);
-  border-top: 1px solid red;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   justify-items: space-between;
   gap: 24px;
+}
+
+@media screen and (max-width: 815px) {
+  .about {
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
 }
 
 .about__h2 {
@@ -214,7 +228,12 @@ section {
 
 .about__col.col-1 {
   width: 40%;
+}
 
+@media screen and (max-width: 815px) {
+  .about__col.col-1 {
+    width: 100%;
+  }
 }
 
 .about__col.col-2 {
