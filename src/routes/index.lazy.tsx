@@ -1,6 +1,5 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 import "../index.css";
-import { useEffect, useState } from "react";
 import data from "../data.json";
 
 export const Route = createLazyFileRoute("/")({
@@ -8,35 +7,9 @@ export const Route = createLazyFileRoute("/")({
 });
 
 function Index() {
-  const [mobileScreen, setMobileScreen] = useState(
-    window.screen.width / window.screen.height < 2 / 3
-  );
-
-  const [resetProjectsbackground, setResetProjectsbackground] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      // different background on different screen ratio
-      setMobileScreen(
-        window.screen.width / window.screen.height < 2 / 3 &&
-          window.screen.orientation.angle === 0
-      );
-      setResetProjectsbackground(
-        window.screen.width / window.screen.height < 4 / 3
-      );
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <main className={`main ${mobileScreen ? "mobile-screen" : ""}`}>
-      <section
-        id="header"
-        className={`header ${mobileScreen ? "mobile-screen" : ""}`}
-      >
+    <main className="main">
+      <section id="header" className="header">
         <nav className="header__nav">
           <picture className="header__picture">
             <img className="header__img" src="assets/logo.svg" alt="logo" />
@@ -50,15 +23,22 @@ function Index() {
         </nav>
         <h1 className="header__h1">Olga Kšírová</h1>
       </section>
-      <section
-        id="projects"
-        className={`projects ${resetProjectsbackground && "reset-background"}`}
-      >
+      <section id="projects" className="projects">
         <Link to="/webdesign" className="projects__col">
           <h2 className="projects__h2">web design</h2>
+          <img
+            className="projects__img"
+            src="assets/design-illustration.webp"
+            alt="web design"
+          />
         </Link>
         <Link to="/logos" className="projects__col">
           <h2 className="projects__h2">logos</h2>
+          <img
+            className="projects__img"
+            src="assets/logos-illustration.webp"
+            alt="logos"
+          />
         </Link>
       </section>
       <section id="about" className="about">
@@ -67,13 +47,21 @@ function Index() {
           {data.about.map((p, i) => (
             <p key={i} className="about__p">
               {p.text}
-            </p>  
+            </p>
           ))}
         </div>
         <picture className="about__col col-2">
-          <img className="about__img" src="assets/olga.jpg" alt="Olga Kšírová" />
+          <img
+            className="about__img"
+            src="assets/olga.jpg"
+            alt="Olga Kšírová"
+          />
         </picture>
       </section>
+      <footer className="footer">
+        <p className="footer__p">© 2024 Olga Kšírová</p>
+        <a className="link" href="https://www.freepik.com">Laptop and pen designed by rawpixel.com / Freepik</a>
+      </footer>
     </main>
   );
 }
