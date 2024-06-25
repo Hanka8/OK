@@ -4,7 +4,7 @@
     top: 80px;
 }
 
-.nav:hover .nav__back {
+.nav:hover .nav__logo {
     scale: 1.5;
     transition: 200ms ease-in-out; 
 }

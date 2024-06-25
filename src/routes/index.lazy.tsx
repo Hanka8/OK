@@ -24,21 +24,21 @@ function Index() {
         <h1 className="header__h1">Olga Kšírová</h1>
       </section>
       <section id="projects" className="projects">
-        <Link to="/webdesign" className="projects__col">
-          <h2 className="projects__h2">web design</h2>
+        <Link to="/webdesign" className="projects__col col-1">
           <img
-            className="projects__img"
-            src="assets/design-illustration.webp"
+            className="projects__img img-1"
+            src="assets/webdesign-illustration.svg"
             alt="web design"
           />
+          <h2 className="projects__h2">web design</h2>
         </Link>
-        <Link to="/logos" className="projects__col">
-          <h2 className="projects__h2">logos</h2>
+        <Link to="/logos" className="projects__col col-2">
           <img
-            className="projects__img"
-            src="assets/logos-illustration.webp"
+            className="projects__img img-2"
+            src="assets/logos-illustration.svg"
             alt="logos"
           />
+          <h2 className="projects__h2">logos</h2>
         </Link>
       </section>
       <section id="about" className="about">
@@ -60,7 +60,9 @@ function Index() {
       </section>
       <footer className="footer">
         <p className="footer__p">© 2024 Olga Kšírová</p>
-        <a className="link" href="https://www.freepik.com">Laptop and pen designed by rawpixel.com / Freepik</a>
+        <a className="link" href="https://www.freepik.com">
+          Laptop and pen designed by rawpixel.com / Freepik
+        </a>
       </footer>
     </main>
   );
