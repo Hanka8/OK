@@ -11,7 +11,7 @@ function Logos() {
   return (
     <main className="logos">
       <Nav />
-      <h1 className="h1">Logos</h1>
+      <h1 className="h1">Logos design</h1>
       <div className="logos__content">
         {data.logos.map((logo, index) => (
           <div key={index} className={`logos__col ${index % 2 != 0 && "flex-reverse"}`}>
