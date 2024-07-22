@@ -49,10 +49,44 @@
     min-height: fit-content;
 }
 
+@media screen and (max-width: 900px) {
+    .design {
+        padding: 32px 48px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design {
+        padding: 32px;
+        border-radius: 50px;
+    }
+    
+}
+
 .design__h2 {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 35px;
+}
+
+.design__h2.secondary {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .design__h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .design__h2 {
+        font-size: 32px;
+    }
 }
 
 .design__h2:not(:first-child) {
@@ -65,11 +99,25 @@
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 600px) {
+    .design__p {
+        font-size: 16px;
+    }
+    
+}
+
 .design__colors {
     display: flex;
     justify-content: flex-start;
     gap: 75px;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .design__colors {
+        gap: 32px;
+    }
+    
 }
 
 .design__color {
@@ -79,6 +127,15 @@
     display: grid;
     place-items: center;
     font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .design__color {
+        width: 96px;
+        height: 96px;
+        font-size: 20px;
+    }
+    
 }
 
 .color-1 {
@@ -112,6 +169,14 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 500px) {
+    .design__font-col {
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+}
+
 .design__font-card {
     width: 128px;
     height: 128px;
@@ -122,4 +187,12 @@
     color: black;
     background-color: white;
     flex-shrink: 0;
+}
+
+.design__img {
+    width: 100%;
+}
+
+.bold {
+    font-weight: 700;
 }

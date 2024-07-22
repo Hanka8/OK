@@ -38,7 +38,7 @@ function Index() {
             src="assets/logos-illustration.svg"
             alt="logos"
           />
-          <h2 className="projects__h2">logos</h2>
+          <h2 className="projects__h2">logo design</h2>
         </Link>
       </section>
       <section id="about" className="about">

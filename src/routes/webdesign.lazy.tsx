@@ -25,7 +25,7 @@ function Webdesign() {
         </p>
         <p className="design__p">
           All <span className="bold">shapes</span>, except the tree, are
-          <span className="bold">custom-made</span> in Illustrator and Figma,
+          <span className="bold"> custom-made</span> in Illustrator and Figma,
           ensuring a cohesive visual identity. The{" "}
           <span className="bold">interactive logo</span> changes color with
           mouse movement and serves as the homepage link. User-friendly
@@ -55,7 +55,7 @@ function Webdesign() {
             <div className="design__font-card">
               <p>Ab</p>
             </div>
-            <p className="design__font-text">
+            <p className="design__p">
               Lorem ipsum dolor sit amet consectetur. Volutpat purus nullam sem
               adipiscing ante pretium. Facilisis sit amet ut non adipiscing ante
               egestas sapien volutpat. Purus morbi vivamus fringilla euismod
@@ -66,7 +66,7 @@ function Webdesign() {
             <div className="design__font-card">
               <p className="bold">Ab</p>
             </div>
-            <p className="design__font-text bold">
+            <p className="design__p bold">
               Lorem ipsum dolor sit amet consectetur. Volutpat purus nullam sem
               adipiscing ante pretium. Facilisis sit amet ut non adipiscing ante
               egestas sapien volutpat. Purus morbi vivamus fringilla euismod
@@ -75,6 +75,10 @@ function Webdesign() {
           </div>
         </div>
       </section>
+      <h2 className="design__h2 secondary">Home page</h2>
+      <picture className="design__picture">
+        <img className="design__img" src="/assets/hloubat-page.png" alt="homepage" />
+      </picture>
     </main>
   );
 }
