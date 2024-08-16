@@ -39,5 +39,23 @@
         "Software used: Adobe Illustrator"
       ]
     }
+  ],
+  "more": [
+    {
+      "src": "assets/more-1.jpg",
+      "alt": "More 1",
+      "text": [
+        "This is a poster I designed for a fictional event. The event is a music festival called “Wave” and the poster features a stylized wave. The poster is designed in a minimalist style with a limited colour palette.",
+        "Software used: Adobe Illustrator"
+      ]
+    },
+    {
+      "src": "assets/more-2.jpg",
+      "alt": "More 2",
+      "text": [
+        "This is a poster I designed for a fictional event. The event is a music festival called “Wave” and the poster features a stylized wave. The poster is designed in a minimalist style with a limited colour palette.",
+        "Software used: Adobe Illustrator"
+      ]
+    }
   ]
 }

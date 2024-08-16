@@ -17,7 +17,7 @@ import { Route as rootRoute } from './routes/__root'
 // Create Virtual Routes
 
 const WebdesignLazyImport = createFileRoute('/webdesign')()
-const MoreLazyImport = createFileRoute('/more')()
+const VariousLazyImport = createFileRoute('/various')()
 const LogosLazyImport = createFileRoute('/logos')()
 const IndexLazyImport = createFileRoute('/')()
 
@@ -28,10 +28,10 @@ const WebdesignLazyRoute = WebdesignLazyImport.update({
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/webdesign.lazy').then((d) => d.Route))
 
-const MoreLazyRoute = MoreLazyImport.update({
-  path: '/more',
+const VariousLazyRoute = VariousLazyImport.update({
+  path: '/various',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/more.lazy').then((d) => d.Route))
+} as any).lazy(() => import('./routes/various.lazy').then((d) => d.Route))
 
 const LogosLazyRoute = LogosLazyImport.update({
   path: '/logos',
@@ -61,11 +61,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LogosLazyImport
       parentRoute: typeof rootRoute
     }
-    '/more': {
-      id: '/more'
-      path: '/more'
-      fullPath: '/more'
-      preLoaderRoute: typeof MoreLazyImport
+    '/various': {
+      id: '/various'
+      path: '/various'
+      fullPath: '/various'
+      preLoaderRoute: typeof VariousLazyImport
       parentRoute: typeof rootRoute
     }
     '/webdesign': {
@@ -83,7 +83,7 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren({
   IndexLazyRoute,
   LogosLazyRoute,
-  MoreLazyRoute,
+  VariousLazyRoute,
   WebdesignLazyRoute,
 })
 
@@ -97,7 +97,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/logos",
-        "/more",
+        "/various",
         "/webdesign"
       ]
     },
@@ -107,8 +107,8 @@ export const routeTree = rootRoute.addChildren({
     "/logos": {
       "filePath": "logos.lazy.tsx"
     },
-    "/more": {
-      "filePath": "more.lazy.tsx"
+    "/various": {
+      "filePath": "various.lazy.tsx"
     },
     "/webdesign": {
       "filePath": "webdesign.lazy.tsx"

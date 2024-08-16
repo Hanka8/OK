@@ -1,6 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
 import Nav from "../components/Nav";
 import "../styles/webdesign.css";
+import "../styles/_common.css";
 
 export const Route = createLazyFileRoute("/webdesign")({
   component: Webdesign,
@@ -77,7 +78,7 @@ function Webdesign() {
       </section>
       <h2 className="design__h2 secondary">Home page</h2>
       <picture className="design__picture">
-        <img className="design__img" src="/assets/hloubat-page.png" alt="homepage" />
+        <img className="design__img" src="/assets/hloubat-page.webp" alt="homepage" />
       </picture>
     </main>
   );

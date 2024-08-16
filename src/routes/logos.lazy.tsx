@@ -1,6 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
 import Nav from "../components/Nav";
 import "../styles/logos.css";
+import "../styles/_common.css";
 import data from "../data.json";
 
 export const Route = createLazyFileRoute("/logos")({

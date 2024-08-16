@@ -40,13 +40,13 @@ function Index() {
           />
           <h2 className="projects__h2">logo design</h2>
         </Link>
-        <Link to="/more" className="projects__col col-3">
+        <Link to="/various" className="projects__col col-3">
           <img
             className="projects__img img-3"
             src="assets/more-illustration.svg"
             alt="more"
           />
-          <h2 className="projects__h2">more projects</h2>
+          <h2 className="projects__h2">various</h2>
         </Link>
       </section>
       <section id="about" className="about">
@@ -61,7 +61,7 @@ function Index() {
         <picture className="about__col col-2">
           <img
             className="about__img"
-            src="assets/olga.png"
+            src="assets/olga.webp"
             alt="Olga Kšírová"
           />
         </picture>

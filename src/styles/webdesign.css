@@ -1,12 +1,9 @@
-@import "_common.css";
-
-/*design */
 .bold {
     font-weight: 700;
 }
 
 .design {
-    background-image: url("/assets/bg-design.png");
+    background-image: url("/assets/bg-design.webp");
     background-repeat: no-repeat;
     background-size: cover;
     margin-inline: auto;
