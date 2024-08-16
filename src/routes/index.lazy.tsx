@@ -1,5 +1,5 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
-import "../index.css";
+import "../styles/index.css";
 import data from "../data.json";
 
 export const Route = createLazyFileRoute("/")({
@@ -39,6 +39,14 @@ function Index() {
             alt="logos"
           />
           <h2 className="projects__h2">logo design</h2>
+        </Link>
+        <Link to="/more" className="projects__col col-3">
+          <img
+            className="projects__img img-3"
+            src="assets/more-illustration.svg"
+            alt="more"
+          />
+          <h2 className="projects__h2">more projects</h2>
         </Link>
       </section>
       <section id="about" className="about">

@@ -1,6 +1,6 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
 import Nav from "../components/Nav";
-import "../logos.css";
+import "../styles/logos.css";
 import data from "../data.json";
 
 export const Route = createLazyFileRoute("/logos")({
@@ -9,7 +9,7 @@ export const Route = createLazyFileRoute("/logos")({
 
 function Logos() {
   return (
-    <main className="logos">
+    <main className="page">
       <Nav />
       <h1 className="h1">Logos design</h1>
       <div className="logos__content">

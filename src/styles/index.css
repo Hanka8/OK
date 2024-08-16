@@ -188,14 +188,19 @@ section {
   align-self: flex-start;
 }
 
-@media screen and (max-width: 475px) {
-  .projects__col.col-1 {
-    align-self: center;
-  }
-}
-
 .projects__col.col-2 {
   align-self: center;
+}
+
+.projects__col.col-3 {
+  align-self: flex-end;
+  padding: 23px;
+}
+
+@media screen and (max-width: 475px) {
+  .projects__col.col-1, .projects__col.col-3 {
+    align-self: center;
+  }
 }
 
 .projects__h2 {
