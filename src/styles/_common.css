@@ -1,5 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     font-family: "Asap Condensed", sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .h1 {
@@ -22,6 +33,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .page {
     min-height: 100vh;
+    background-color: #051226;
     background-size: cover;
     background-position: center;
     font-family: 'Tw Cen MT', sans-serif;

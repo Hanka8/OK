@@ -40,6 +40,10 @@
     }
 }
 
+.container-2 .various__p {
+    background-color: #a3a09f;
+}
+
 .various__p {
     font-size: 20px;
     margin-bottom: 16px;
