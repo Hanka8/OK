@@ -68,6 +68,39 @@ function Various() {
           <img src="/assets/various-2.webp" alt="pigeon illustration" />
         </picture>
       </div>
+
+      <div className="various__container container-3">
+        <div className="various__col">
+          <h2 className="various__h2">Illustrations</h2>
+          <p className="various__p">
+            These illustrations were created as part of practice projects.
+          </p>
+          <p className="various__p">
+            <span className="bold">Software used:</span> Procreate and
+            Illustrator
+          </p>
+          <p className="various__p">
+            Lyre and spear, a book cover idea for The Song of Achilles,
+            symbolizing a conflict of love and war. Initially sketched in
+            Procreate, the illustration was later refined in Illustrator using
+            the <span className="bold">Image Trace </span>tool to vectorize the
+            design.
+          </p>
+          <p className="various__p">
+            A boy sitting on a wooden bridge, conveying a sense of playfulness.
+            Completed in Illustrator using the <span className="bold">Pen Tool </span> and <span className="bold">Shape Tools.</span>
+            
+          </p>
+        </div>
+        <picture className="various__img img-3">
+          <source
+            srcSet="/assets/various-3__mobile.svg"
+            media="(max-width: 470px)"
+            type="image/webp"
+          />
+          <img src="/assets/various-3.svg" alt="business card luna" />
+        </picture>
+      </div>
     </main>
   );
 }
