@@ -11,7 +11,7 @@
     width: fit-content;
     padding: 52px 79px;
     color: white;
-    border-radius: 75px;
+    border-radius: 20px;
     min-height: fit-content;
 }
 
@@ -155,10 +155,17 @@
     flex-shrink: 0;
 }
 
-.design__img {
+.design__iframe {
     width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 30px;
 }
 
 .bold {
     font-weight: 700;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
 }

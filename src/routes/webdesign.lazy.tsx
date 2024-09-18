@@ -50,13 +50,13 @@ function Webdesign() {
             <p className="design__color-text">#6cc5d9</p>
           </div>
         </div>
-        <h2 className="design__h2">Google font Oswald</h2>
+        <h2 className="design__h2 oswald">Google font Oswald</h2>
         <div className="design__font-container">
           <div className="design__font-col">
             <div className="design__font-card">
               <p>Ab</p>
             </div>
-            <p className="design__p">
+            <p className="design__p oswald">
               Lorem ipsum dolor sit amet consectetur. Volutpat purus nullam sem
               adipiscing ante pretium. Facilisis sit amet ut non adipiscing ante
               egestas sapien volutpat. Purus morbi vivamus fringilla euismod
@@ -67,7 +67,7 @@ function Webdesign() {
             <div className="design__font-card">
               <p className="bold">Ab</p>
             </div>
-            <p className="design__p bold">
+            <p className="design__p bold oswald">
               Lorem ipsum dolor sit amet consectetur. Volutpat purus nullam sem
               adipiscing ante pretium. Facilisis sit amet ut non adipiscing ante
               egestas sapien volutpat. Purus morbi vivamus fringilla euismod
@@ -77,9 +77,10 @@ function Webdesign() {
         </div>
       </section>
       <h2 className="design__h2 secondary">Home page</h2>
-      <picture className="design__picture">
-        <img className="design__img" src="/assets/hloubat-page.webp" alt="homepage" />
-      </picture>
+      <iframe className="design__iframe" 
+        title="Hloub.at"
+        src="https://hloub.at/"
+      />
     </main>
   );
 }

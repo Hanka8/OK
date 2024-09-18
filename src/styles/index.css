@@ -22,6 +22,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
 .main {
   background-color: var(--background-color);
   background-image: url("../assets/background.svg");
@@ -177,6 +182,7 @@ section {
   padding: 26px 57px;
   position: relative;
   background-color: #1F2C40;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
 .projects__col:hover {
@@ -293,12 +299,19 @@ section {
   background-color: var(--background-color);
   mix-blend-mode: difference;
   width: 100vw;
-  margin-left: calc(-1 * var(--padding-inline));
   padding: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer {
+    position: static;
+    margin-left: calc(-1 * var(--padding-inline));
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -61,7 +61,7 @@ function Index() {
         <picture className="about__col col-2">
           <img
             className="about__img"
-            src="assets/olga.webp"
+            src="assets/olga-kopie.webp"
             alt="Olga Kšírová"
           />
         </picture>
