@@ -104,6 +104,11 @@
     
 }
 
+.design__img {
+    width: 100%;
+    border-radius: 30px;
+}
+
 .color-1 {
     background-color: #bf5841;
 }
