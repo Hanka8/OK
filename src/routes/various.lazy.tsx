@@ -60,7 +60,7 @@ function Various() {
         <img src="/assets/various-3.png" className="logos__img" />
         <div className="logos__text">
           <p className="logos__p">
-            Creating a brochure was a project  assigned during my Adobe course. 
+            Creating a brochure was a project assigned during my Adobe course.
           </p>
           <p className="logos__p">
             <span className="bold">Deadline to finish:</span> 2 hours
@@ -77,7 +77,6 @@ function Various() {
           </p>
         </div>
       </div>
-
     </main>
   );
 }
