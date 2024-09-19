@@ -77,13 +77,13 @@ function Webdesign() {
         </div>
       </section>
       <h2 className="design__h2 secondary">Home page</h2>
-      {/* <iframe className="design__iframe" 
+      <iframe className="design__iframe" 
         title="Hloub.at"
         src="https://hloub.at/"
-      /> */}
-      <picture>
+      />
+      {/* <picture>
         <img className="design__img" src="/assets/hloubat-page.webp" alt="web design" />
-      </picture>
+      </picture> */}
     </main>
   );
 }
